@@ -2,8 +2,7 @@ event = input().split('|')
 energy = 100
 coins = 100
 forced_end = False
-for i in range(len(event)):
-    current_event = event[i]
+for current_event in event:
     separated_item = current_event.split('-')
     command = separated_item[0]
     value = int(separated_item[1])
