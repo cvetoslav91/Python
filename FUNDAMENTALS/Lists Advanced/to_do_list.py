@@ -1,6 +1,4 @@
 my_list = []
-new_list = []
-final_list = []
 while True:
     command = input()
     if command == 'End':
