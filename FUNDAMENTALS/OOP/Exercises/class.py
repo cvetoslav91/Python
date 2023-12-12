@@ -7,10 +7,9 @@ class Class:
         self.grades = []
 
     def add_student(self, name: str, grade: float):
-        if len(self.students) < 22:
+        if len(self.students) < Class.__students_count:
             self.students.append(name)
             self.grades.append(grade)
-        Class.__students_count += 1
 
     def get_average_grade(self):
         average_grade = sum(self.grades) / len(self.grades)
