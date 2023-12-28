@@ -6,9 +6,9 @@ def subtract(result, c):
     final_result = result - c
     return final_result
 
-def add_and_subtract(first, second):
+def add_and_subtract(second):
     print(second)
 
 first = sum_numbers(a = int(input()), b = int(input()))
 second = subtract(first, c = int(input()))
-res = add_and_subtract(first, second)
+res = add_and_subtract(second)

@@ -2,7 +2,7 @@ word = input().split()
 first_word = word[0]
 second_word = word[1]
 minimum_chars = min(len(first_word), len(second_word))
-max_word = max((word), key=len)
+max_word = max(word, key=len)
 left_chars = max_word[minimum_chars:]
 total_sum = 0
 for i in range(minimum_chars):

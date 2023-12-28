@@ -10,6 +10,6 @@ def data_type(type, value):
         return f'${value}$'
 
 
-type = input()
-value = input()
-print(data_type(type, value))
+type_of_data = input()
+number = input()
+print(data_type(type_of_data, number))
