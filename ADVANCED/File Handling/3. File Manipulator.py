@@ -14,6 +14,11 @@ while command[0] != 'End':
             with open(f'files/{command[1]}', "r+") as file:
                 text = file.read()
                 text = text.replace(f'{command[2]}', f'{command[3]}')
+
+                file.seek(0)
+                file.write(text)
+                file.truncate()
+
         except FileNotFoundError:
             print('An error occurred')
     elif command[0] == 'Delete':

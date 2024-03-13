@@ -1,0 +1,2 @@
+def animals():
+    return None
